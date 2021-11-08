@@ -1,6 +1,7 @@
 <?php
     //Запускаем сессию
     session_start();
+    //$link = mysqli_connect('test','root','','eprst');
 ?>
  
 <!DOCTYPE html>
@@ -78,6 +79,7 @@
             <h2>Шапка сайта</h2>
  
             <a href="/index.php">Главная</a>
+            
  
                     <!--Выход с сайта -->
         <div id="auth_block">
@@ -93,11 +95,20 @@
                     <div id="link_auth">
                         <a href="/register/form_auth.php">Авторизация</a>
                     </div>
+                    
             <?php
                 }
                 else{
                     //Если пользователь авторизован, то выводим ссылку Выход
             ?> 
+            <?php
+                   
+                  //$user_email = $_SESSION['email'];
+                  //$result = mysqliquery($link,"SELECT 'first_name','last_name' FROM `users` WHERE `email`='$user_email'");
+                  //$row = mysql_fetch_array($result);
+                  //echo "Здравствуйте, ".$row;
+                    echo $_SESSION['id'];
+                    ?>
                     <div id="link_logout">
                         <a href="/register/logout.php">Выход</a>
                     </div>

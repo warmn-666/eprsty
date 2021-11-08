@@ -31,7 +31,7 @@ if(isset($_POST["email"])){
              
             //Возвращаем пользователя на страницу авторизации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: ".$address_site."/form_auth.php");
+            header("Location: ".$address_site."/register/form_auth.php");
  
             //Останавливаем скрипт
             exit();
@@ -43,7 +43,7 @@ if(isset($_POST["email"])){
          
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: ".$address_site."/form_register.php");
+        header("Location: ".$address_site."/register/form_register.php");
  
         //Останавливаем скрипт
         exit();
@@ -57,7 +57,7 @@ else{
      
     //Возвращаем пользователя на страницу авторизации
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: ".$address_site."/form_auth.php");
+    header("Location: ".$address_site."/register/form_auth.php");
  
     //Останавливаем скрипт
     exit();
@@ -80,7 +80,7 @@ if(isset($_POST["password"])){
          
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: ".$address_site."/form_auth.php");
+        header("Location: ".$address_site."/register/form_auth.php");
  
         //Останавливаем скрипт
         exit();
@@ -93,7 +93,7 @@ else{
      
     //Возвращаем пользователя на страницу регистрации
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: ".$address_site."/form_auth.php");
+    header("Location: ".$address_site."/register/form_auth.php");
  
     //Останавливаем скрипт
     exit();
@@ -107,7 +107,7 @@ if(!$result_query_select){
      
     //Возвращаем пользователя на страницу регистрации
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: ".$address_site."/form_auth.php");
+    header("Location: ".$address_site."/register/form_auth.php");
  
     //Останавливаем скрипт
     exit();
@@ -133,7 +133,7 @@ else{
          
         //Возвращаем пользователя на страницу авторизации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: ".$address_site."/form_auth.php");
+        header("Location: ".$address_site."/register/form_auth.php");
  
         //Останавливаем скрипт
         exit();

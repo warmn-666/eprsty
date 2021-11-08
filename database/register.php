@@ -35,7 +35,7 @@ if(isset($_POST["first_name"])){
  
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: ".$address_site."/form_register.php");
+        header("Location: ".$address_site."/register/form_register.php");
  
         //Останавливаем скрипт
         exit();
@@ -48,7 +48,7 @@ if(isset($_POST["first_name"])){
  
     //Возвращаем пользователя на страницу регистрации
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: ".$address_site."/form_register.php");
+    header("Location: ".$address_site."/register/form_register.php");
  
     //Останавливаем скрипт
     exit();
@@ -70,7 +70,7 @@ if(isset($_POST["last_name"])){
          
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: ".$address_site."/form_register.php");
+        header("Location: ".$address_site."/register/form_register.php");
  
         //Останавливаем  скрипт
         exit();
@@ -84,13 +84,12 @@ if(isset($_POST["last_name"])){
      
     //Возвращаем пользователя на страницу регистрации
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: ".$address_site."/form_register.php");
+    header("Location: ".$address_site."/register/form_register.php");
  
     //Останавливаем  скрипт
     exit();
 }
- 
- 
+       
 if(isset($_POST["email"])){
  
     //Обрезаем пробелы с начала и с конца строки
@@ -110,7 +109,7 @@ if( !preg_match($reg_email, $email)){
      
     //Возвращаем пользователя на страницу регистрации
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: ".$address_site."/form_register.php");
+    header("Location: ".$address_site."/register/form_register.php");
  
     //Останавливаем  скрипт
     exit();
@@ -130,7 +129,7 @@ if($result_query->num_rows == 1){
              
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: ".$address_site."/form_register.php");
+            header("Location: ".$address_site."/register/form_register.php");
          
     }else{
         // Сохраняем в сессию сообщение об ошибке. 
@@ -138,7 +137,7 @@ if($result_query->num_rows == 1){
          
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: ".$address_site."/form_register.php");
+        header("Location: ".$address_site."/register/form_register.php");
     }
  
     /* закрытие выборки */
@@ -157,7 +156,7 @@ $result_query->close();
          
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: ".$address_site."/form_register.php");
+        header("Location: ".$address_site."/register/form_register.php");
  
         //Останавливаем  скрипт
         exit();
@@ -170,7 +169,7 @@ else{
      
     //Возвращаем пользователя на страницу регистрации
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: ".$address_site."/form_register.php");
+    header("Location: ".$address_site."/register/form_register.php");
  
     //Останавливаем  скрипт
     exit();
@@ -193,7 +192,7 @@ if(isset($_POST["password"])){
          
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: ".$address_site."/form_register.php");
+        header("Location: ".$address_site."/register/form_register.php");
  
         //Останавливаем  скрипт
         exit();
@@ -205,7 +204,7 @@ if(isset($_POST["password"])){
      
     //Возвращаем пользователя на страницу регистрации
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: ".$address_site."/form_register.php");
+    header("Location: ".$address_site."/register/form_register.php");
  
     //Останавливаем  скрипт
     exit();
@@ -220,7 +219,7 @@ if(!$result_query_insert){
      
     //Возвращаем пользователя на страницу регистрации
     header("HTTP/1.1 301 Moved Permanently");
-    header("Location: ".$address_site."/form_register.php");
+    header("Location: ".$address_site."/register/form_register.php");
  
     //Останавливаем  скрипт
     exit();
